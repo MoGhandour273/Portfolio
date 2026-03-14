@@ -46,7 +46,7 @@ function NavBar() {
           <a href="#about"><h2>Mohamed Elghandour</h2></a>
           <a onClick={() => setOpen(!open)} className='menu-icon'><IoMenu /></a>
         </div>
-        <div className={ open ? " main-container":"main-container show"}>
+        <div className={ `main-container ${open ? "show" : ""}`} >
           <div className="collapse navbar-collapse links">
             <a
               className={activeLink === "home" ? "active" : ""}
